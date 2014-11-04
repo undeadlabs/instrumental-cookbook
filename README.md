@@ -1,6 +1,6 @@
 # instrumental-cookbook
 
-Installs and configures [Instrumental](http://instrumentalapp.com)
+Installs and configures components of [Instrumental](http://instrumentalapp.com)
 
 ## Supported Platforms
 
