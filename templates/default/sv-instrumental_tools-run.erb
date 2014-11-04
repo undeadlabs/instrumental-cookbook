@@ -1,0 +1,8 @@
+#!/bin/sh
+
+PATH=$PATH:/opt/chef/embedded/bin
+
+exec 2>&1
+exec <%= node[:runit][:chpst_bin] %> \
+      -u <%= node[:instrumental][:tools][:user] %>:<%= node[:instrumental][:tools][:group] %> \
+      instrument_server -k <%= node[:instrumental][:api_key] %> -H <%= node[:instrumental][:tools][:hostname] %>
