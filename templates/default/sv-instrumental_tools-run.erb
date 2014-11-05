@@ -1,6 +1,6 @@
 #!/bin/sh
 
-PATH=$PATH:/opt/chef/embedded/bin
+PATH=/opt/chef/embedded/bin:$PATH
 
 exec 2>&1
 exec <%= node[:runit][:chpst_bin] %> \
