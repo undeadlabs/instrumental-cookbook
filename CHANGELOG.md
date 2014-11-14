@@ -1,3 +1,8 @@
+# 0.2.0
+
+* Enhancements
+  * Attributes will be validated at convergence time
+
 # 0.1.1
 
 * Bug fixes
