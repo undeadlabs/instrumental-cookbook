@@ -7,7 +7,7 @@
 # Copyright (c) 2014 Undead Labs, LLC
 #
 
-Instrumental::Validations.validate!(node)
+validate_attributes "instrumental"
 
 include_recipe "runit"
 

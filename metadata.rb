@@ -9,3 +9,32 @@ version          "0.1.1"
 supports "ubuntu"
 
 depends "runit"
+depends "validation", ">= 0.2.0"
+
+grouping "instrumental",
+  title: "Instrumental"
+attribute "instrumental/api_key",
+  required: "required",
+  recipes: [
+    "instrumental::tools"
+  ]
+
+grouping "instrumental/tools",
+  title: "Instrumental Tools"
+attribute "instrumental/tools/user",
+  required: "required",
+  default: "instrumental",
+  recipes: [
+    "instrumental::tools"
+  ]
+attribute "instrumental/tools/group",
+  required: "required",
+  default: "instrumental",
+  recipes: [
+    "instrumental::tools"
+  ]
+attribute "instrumental/tools/hostname",
+  calculated: true,
+  recipes: [
+    "instrumental::tools"
+  ]
