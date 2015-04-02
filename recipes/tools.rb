@@ -7,7 +7,8 @@
 # Copyright (c) 2014 Undead Labs, LLC
 #
 
-validate_attributes "instrumental"
+# disabled until the validation cookbook works with chef 12
+#validate_attributes "instrumental"
 
 include_recipe "runit"
 
