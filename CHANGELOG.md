@@ -1,4 +1,4 @@
-# Unreleased (0.3.0-dev)
+# 0.3.0
 
 * Enhancements
   * Officially support Ubuntu 14.04
