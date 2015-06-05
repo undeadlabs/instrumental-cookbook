@@ -1,3 +1,11 @@
+# Unreleased (0.3.0-dev)
+
+* Enhancements
+  * Officially support Ubuntu 14.04
+
+* Backwards incompatible changes
+  * Drop official support for Ubuntu 12.04
+
 # 0.2.0
 
 * Enhancements
