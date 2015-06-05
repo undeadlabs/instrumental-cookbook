@@ -2,6 +2,8 @@
 
 * Enhancements
   * Officially support Ubuntu 14.04
+  * add `instrumental.enabled` attribute for controlling whether the service gets enabled and started
+  * the `instrumental.api_key` attribute is no longer required
 
 * Backwards incompatible changes
   * Drop official support for Ubuntu 12.04

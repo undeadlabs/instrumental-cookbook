@@ -8,3 +8,4 @@
 #
 
 default[:instrumental][:api_key] = nil
+default[:instrumental][:enabled] = true
