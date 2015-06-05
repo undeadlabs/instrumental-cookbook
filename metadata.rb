@@ -13,8 +13,9 @@ depends "validation", ">= 0.2.0"
 
 grouping "instrumental",
   title: "Instrumental"
-attribute "instrumental/api_key",
+attribute "instrumental/enabled",
   required: "required",
+  type: "boolean",
   recipes: [
     "instrumental::tools"
   ]

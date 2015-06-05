@@ -25,5 +25,10 @@ chef_gem "instrumental_tools"
 
 runit_service "instrumental_tools" do
   default_logger true
-  action [:enable, :start]
+
+  if node[:instrumental][:enabled]
+    action [:enable, :start]
+  else
+    action :create
+  end
 end
