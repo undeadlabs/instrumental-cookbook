@@ -4,7 +4,7 @@
 #
 # The MIT License (MIT)
 #
-# Copyright (c) 2014 Undead Labs, LLC
+# Copyright (c) 2014-2015 Undead Labs, LLC
 #
 
 validate_attributes "instrumental"
@@ -21,7 +21,13 @@ user node[:instrumental][:tools][:user] do
   system true
 end
 
-chef_gem "instrumental_tools"
+if Chef::Resource::ChefGem.instance_methods(false).include?(:compile_time)
+  chef_gem "instrumental_tools" do
+    compile_time false
+  end
+else
+  chef_gem "instrumental_tools"
+end
 
 runit_service "instrumental_tools" do
   default_logger true
