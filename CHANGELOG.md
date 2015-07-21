@@ -1,3 +1,8 @@
+# 0.3.1
+
+* Enhancements
+  * Explicitly set compile_time to false where available. Fixes compilation warning.
+
 # 0.3.0
 
 * Enhancements
